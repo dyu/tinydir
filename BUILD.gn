@@ -1,0 +1,11 @@
+
+config("tinydir_config") {
+  include_dirs = [ "." ]
+}
+
+source_set("tinydir") {
+  sources = [
+    "tinydir.h",
+  ]
+  public_configs = [ ":tinydir_config" ]
+}
